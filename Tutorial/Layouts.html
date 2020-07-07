@@ -1,0 +1,80 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<title>Document</title>
+	</head>
+	<body>
+
+        <!--Grid layout-->
+        <!--Mastering Layout with Bootstrap-->
+        <!--grid container has a total of 12 units-->
+		<div class="container">
+			<div class="row row-cols-2 row-cols-lg-3 no-gutters justify-content-center">
+
+				<section class="col-3">
+                    <img src="../assets/car1.jpg" width="250" height="150" alt="car" class="rounded" />
+                    <p>Some random text to be displayed on the screen itself!!!</p>
+                </section>
+                
+				<section class="col-3">
+                    <img src="../assets/car2.jpg" width="250" height="150" alt="car" class="rounded" />
+                    <p>Some random text to be displayed on the screen itself!!!</p>
+                </section>
+                
+				<section class="col-3">
+                    <img src="../assets/car1.jpg" width="250" height="150" alt="car" class="rounded" />
+                    <p>Some random text to be displayed on the screen itself!!!</p>
+                </section>
+                
+				<section class="col-3">
+                    <img src="../assets/car2.jpg" width="250" height="150" alt="car" class="rounded" />
+                    <p>Some random text to be displayed on the screen itself!!!</p>
+                </section>
+                
+			</div>
+        </div>
+        
+        <style>
+            .item{
+                background-color: blueviolet;
+                text-align: center;
+                width: 150px;
+                height: 30px;
+                border: 1px solid white;
+            }
+            .itemNew{
+                width: 150px;
+                height: 150px;
+                display: inline-block;
+                margin: 10px;
+                background-color: rgb(121, 151, 151);
+            }
+        </style>
+        <!--Flex-Box-->
+        <div class="container bg-danger">
+            <div class="bg-info d-flex flex-row justify-content-center flex-wrap align-content-center" style="height: 100vh;">
+                <div class="item">Exotic</div>
+                <div class="item">Racing</div>
+                <div class="item">Health</div>
+                <div class="item">Exotic</div>
+                <div class="item">Racing</div>
+                <div class="item">Health</div>
+            </div >
+        </div >
+
+        <!--Borders-->
+
+        <div class="container">
+            <div class="itemNew border-primary border"></div>
+            <div class="itemNew border border-danger"></div>
+            <div class="itemNew border-top border-warning"></div>
+            <div class="itemNew border-0 rounded border-danger"></div>
+        </div>
+
+		<script src="../jquery/dist/jquery.slim.min.js"></script>
+		<script src="../@popperjs/core/dist/umd/popper.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+</html>
